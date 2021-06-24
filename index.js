@@ -1,18 +1,19 @@
-const name = ["Lisa", "Kaitlin", "Jan"]
-const event = "surprise";
+const name = ['Lisa', 'Kaitlin','Jan'];
+const gift = 'surprise'
 
-function writeCards(name,event) {
+function writeCards(name,gift){
     let cardArray = [];
     for (let i = 0; i < name.length; i++) {
-        let message = (`Thank you, ${name[i]}, for the wonderful ${event} gift!`);
+        let message = (`Thank you, ${name[i]}, for the wonderful ${gift} gift!`);
         cardArray.push(message);
     }
-    return cardArray
+    return cardArray;
 }
 
-function countDown(count) {
-    let doomsdayTicker = count
-    while (doomsdayTicker >= 0) {
-        console.log(doomsdayTicker--);
+
+function countDown(count){
+    let newCount = count;
+    while (newCount >= 0){
+        console.log(newCount--);
     }
 }
